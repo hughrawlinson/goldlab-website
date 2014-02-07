@@ -18,6 +18,12 @@ html,body{
 }
 
 
+
+p {
+	font-size: 1.2em;
+	
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -84,9 +90,13 @@ html,body{
     position: relative;
     bottom: 0;
     width: 30%;
-    height: 1px;
+    height: 2px;
     margin: 20px auto 10px auto;
     background: #eee;
     display: block;
     
+}
+
+hr {
+	border-top: 2px solid #EEE;
 }
