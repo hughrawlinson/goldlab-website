@@ -10,8 +10,7 @@ require.config({
         bootstrapScrollspy: '../bower_components/sass-bootstrap/js/scrollspy',
         bootstrapTab: '../bower_components/sass-bootstrap/js/tab',
         bootstrapTooltip: '../bower_components/sass-bootstrap/js/tooltip',
-        bootstrapTransition: '../bower_components/sass-bootstrap/js/transition',
-        stellar: '/scripts/jquery.stellar.min.js'
+        bootstrapTransition: '../bower_components/sass-bootstrap/js/transition'
     },
     shim: {
         bootstrapAffix: {
@@ -42,9 +41,6 @@ require.config({
             deps: ['jquery']
         },
         bootstrapTransition: {
-            deps: ['jquery']
-        },
-        stellar: {
             deps: ['jquery']
         }
     }
