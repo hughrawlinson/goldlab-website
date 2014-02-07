@@ -1,6 +1,8 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Bad+Script|Calligraffitti|Roboto+Slab);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -16,8 +18,6 @@ html,body{
 #top{
     height:100%;
 }
-
-
 
 p {
 	font-size: 1.2em;
@@ -76,27 +76,73 @@ p {
     margin-top: 28px;
 }
 
-#top{
-    background:url("/images/bg.jpg");
+/* The ghost, nudged to maintain perfect centering */
+#top:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
 }
 
-.jumbotron{
-    margin-top:8em;
+#top{
+    background:url("/images/bg.jpg");
+    text-align:center;
+    .container{
+        margin-bottom: 2em;
+        display: inline-block;
+        vertical-align:middle;
+    }
+    #mc_embed_signup{
+        h2{
+            color:#caab72;
+        }
+    }
+}
+
+#leader{
     background:none;
-    border:none!important;
+    p,h1{
+        color:#caab72;
+    }
+    p{
+        font-family:'Calligraffitti';
+        font-size:25pt;
+        text-shadow:0px 1px #F0D7A8;
+    }
+    h1{
+        font-family:'Oswald';
+        text-shadow:0px 2px #F0D7A8;
+        font-size:52pt;
+        font-weight:900;
+    }
+    h1:hover{
+        text-shadow:1px 3px #F0D7A8;
+        position:relative;
+        top:-1px;
+        left:-1px;
+    }
 }
 
 .border {
     position: relative;
     bottom: 0;
     width: 30%;
-    height: 2px;
+    height: 1px;
     margin: 20px auto 10px auto;
-    background: #eee;
+    background: #555;
     display: block;
-    
 }
 
-hr {
-	border-top: 2px solid #EEE;
+#bottom{
+    padding-top:1.5em;
+    hr, .footer {
+        border-top: 1px solid #555;
+        p{
+            color: #333;
+            .fa-heart{
+                color:#ff69b4;
+            }
+        }
+    }
 }

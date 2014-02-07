@@ -42,13 +42,26 @@ require.config({
         },
         bootstrapTransition: {
             deps: ['jquery']
+        },
+        'jquery.stellar':{
+            deps: ['jquery']
         }
     }
 });
 
-require(['app', 'jquery'], function (app, $) {
+require(['app', 'jquery', 'jquery.stellar'], function (app, $) {
     'use strict';
     // use app here
+
+    $.stellar();
+
+    $(document).scroll(function(){
+        var colorOffset = (
+            $(document).scrollTop()/($(document).height()-$('html').height())
+        );
+        console.log(colorOffset);
+        $('html').css('background','hsl('+(110+colorOffset*120)+',100%,80%)');
+    });
 
     console.log(app);
     console.log('Running jQuery %s', $().jquery);
