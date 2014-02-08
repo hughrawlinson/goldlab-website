@@ -55,7 +55,7 @@ require(['app', 'jquery', 'jquery.stellar'], function (app, $) {
 
     $.stellar();
 
-    $(document).bind('scroll touchmove',function(){
+    $(document).bind('scroll ontouchmove',function(){
         var colorOffset = (
             $(document).scrollTop()/($(document).height()-$('html').height())
         );

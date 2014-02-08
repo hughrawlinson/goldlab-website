@@ -80,7 +80,7 @@ p {
 #top:before {
     content: '';
     display: inline-block;
-    height: 30%;
+    height: 10%;
     vertical-align: middle;
     margin-right: -0.25em;
     @media screen and (min-width: 768px) {
@@ -96,6 +96,7 @@ p {
         display: inline-block;
         vertical-align:middle;
     }
+
     #mc_embed_signup{
         h2{
             color:#caab72;
@@ -110,13 +111,13 @@ p {
     }
     p{
         font-family:'Calligraffitti';
-        font-size:25pt;
+        font-size:2.5em;
         text-shadow:0px 1px #F0D7A8;
     }
     h1{
         font-family:'Oswald';
         text-shadow:0px 2px #F0D7A8;
-        font-size:52pt;
+        font-size:5em;
         font-weight:900;
     }
     h1:hover{
