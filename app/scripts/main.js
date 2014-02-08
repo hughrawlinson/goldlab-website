@@ -52,17 +52,16 @@ require.config({
 require(['app', 'jquery', 'jquery.stellar'], function (app, $) {
     'use strict';
     // use app here
-
     $.stellar();
 
-    $(document).bind('scroll ontouchmove',function(){
+    $(document).on("scroll touchmove", function(event){
         var colorOffset = (
             $(document).scrollTop()/($(document).height()-$('html').height())
-        );
-        console.log(colorOffset);
+            );
+        // console.log(colorOffset);
         $('html').css('background','hsl('+(110+colorOffset*120)+',100%,80%)');
     });
 
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
+console.log(app);
+console.log('Running jQuery %s', $().jquery);
 });
