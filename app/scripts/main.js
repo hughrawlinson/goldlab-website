@@ -52,16 +52,20 @@ require.config({
 require(['app', 'jquery', 'jquery.stellar'], function (app, $) {
     'use strict';
     // use app here
-    $.stellar();
+    if(!Modernizr.touch){
 
-    $(document).on("scroll touchmove", function(event){
-        var colorOffset = (
-            $(document).scrollTop()/($(document).height()-$('html').height())
-            );
+        $.stellar();
+
+        $(document).on("scroll ontouchmove", function(event){
+            var colorOffset = (
+                $(document).scrollTop()/($(document).height()-$('html').height())
+                );
         // console.log(colorOffset);
         $('html').css('background','hsl('+(110+colorOffset*120)+',100%,80%)');
     });
-
-console.log(app);
-console.log('Running jQuery %s', $().jquery);
+    }else{
+        $('html').css('background', 'hsl(110, 100%, 80%)');
+    }
+    console.log(app);
+    console.log('Running jQuery %s', $().jquery);
 });
