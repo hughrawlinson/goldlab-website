@@ -16,8 +16,11 @@ html,body{
 }
 
 html{
+	background-color: #ffffff;
+/*
     background:hsl(110, 100%, 80%);
     background-color:#AAFF99;
+*/
 }
 
 #top{
@@ -94,7 +97,8 @@ p {
 }
 
 #top{
-    background:url("../images/bg.jpg");
+    background:url("../images/LightSpace.jpg");
+    background-size: cover;
     text-align:center;
     .container{
         margin-bottom: 2em;
@@ -104,7 +108,7 @@ p {
 
     #mc_embed_signup{
         h2{
-            color:#caab72;
+            color:#ffffff;
         }
     }
 }
@@ -112,21 +116,19 @@ p {
 #leader{
     background:none;
     p,h1{
-        color:#caab72;
+        color:#ffffff;
     }
     p{
-        font-family:'Calligraffitti';
-        font-size:2.5em;
-        text-shadow:0px 1px #F0D7A8;
+		font-family: 'EB Garamond', serif;
+		font-style: italic;
+        font-size:3.6em;
     }
     h1{
         font-family:'Oswald';
-        text-shadow:0px 2px #F0D7A8;
-        font-size:5em;
+        font-size:10em;
         font-weight:900;
     }
     h1:hover{
-        text-shadow:1px 3px #F0D7A8;
         position:relative;
         top:-1px;
         left:-1px;

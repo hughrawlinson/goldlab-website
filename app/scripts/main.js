@@ -63,9 +63,11 @@ require(['app', 'jquery', 'jquery.stellar'], function (app, $) {
                     $('html').height()
                 )
             );
+/*
             $('html').css('background',
                 'hsl('+(110+colorOffset*120)+',100%,80%)'
             );
+*/
         });
     }
     console.log(app);
